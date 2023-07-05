@@ -27,7 +27,7 @@ jobs:
      - name: unzip
        uses: TonyBogdanov/zip@1.0
        with:
-          args: unzip -qq .../tmrbns.webflow.zip -d ./
+          args: unzip -qq ../tmrbns.webflow.zip -d ./
   # Single deploy job since we're just deploying
   deploy:
     environment:
