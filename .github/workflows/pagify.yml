@@ -23,10 +23,12 @@ concurrency:
 jobs:
   unzip:
     runs-on: ubuntu-latest
-    - uses: TonyBogdanov/zip@1.0
-      with:
-        args: unzip -qq .timrbns.webflow.zip -d ./
-        working-directory: .
+    steps:
+     - name: unzip
+       uses: TonyBogdanov/zip@1.0
+       with:
+          args: unzip -qq .timrbns.webflow.zip -d ./
+          working-directory: .
   # Single deploy job since we're just deploying
   deploy:
     environment:
