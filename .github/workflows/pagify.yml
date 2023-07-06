@@ -29,7 +29,7 @@ jobs:
      - name: unzip
        uses: montudor/action-zip@v1
        with:
-          args: unzip -qq https://github.com/marshalmiller/webflow-pages/blob/82fb594da443c74e2982112185488e85c14f8868/timrbns.webflow.zip -d ./
+          args: unzip -qq ./timrbns.webflow.zip -d .
   # Single deploy job since we're just deploying
   deploy:
     environment:
