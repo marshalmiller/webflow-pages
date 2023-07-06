@@ -25,7 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - name: unzip
-       uses: TonyBogdanov/zip@1.0
+       uses: montudor/action-zip@v1
        with:
           args: unzip -qq ./tmrbns.webflow.zip -d ./
   # Single deploy job since we're just deploying
