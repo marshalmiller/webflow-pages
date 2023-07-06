@@ -10,7 +10,7 @@ on:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -27,7 +27,7 @@ jobs:
      - name: unzip
        uses: TonyBogdanov/zip@1.0
        with:
-          args: unzip -qq marshalmiller/webflow-pages/tmrbns.webflow.zip@main -d ./
+          args: unzip -qq ./tmrbns.webflow.zip -d ./
   # Single deploy job since we're just deploying
   deploy:
     environment:
